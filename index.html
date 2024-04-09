@@ -3,17 +3,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Jewels</title>
+    <link rel="stylesheet" href="./css/baseLayout.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <a href="./index.html">home</a>
-    <a href="./about.html" target="_blank">about</a>
-    <h1>welcome to about page</h1>
-
+    <!-- ===== base layout ===== -->
+    <div class="baselayout">
+      <!-- === links === -->
+      <div class="baseleft">
+        <a href="./index.html" class="sidelink sidelink-active">Home</a>
+        <a href="./pages/createinvoice.html" class="sidelink">Create invoice</a>
+        <a href="./pages/allinvoice.html" class="sidelink ">all invoices</a>
+        <a href="./pages/createuser.html" class="sidelink">create user</a>
+        <a href="./pages/updateuser.html" class="sidelink">update user</a>
+        <a href="./pages/allusers.html" class="sidelink">All users</a>
+        <a href="./pages/staticts.html" class="sidelink">Statistics </a>
+      </div>
+      <!-- === main content area === -->
+      <div class="baseright">
+        <!-- == your ui == -->
+        <div id="index">
+          <div id="welcome">
+            <img src="./" alt="">
+            <h1>welcome user</h1>
+            <p>date: 01-10-2024</p>
+          </div>
+          <div id="stats">
+            <h2>Todays stats</h2>
+            <div>
+              <p>invoices created: 10</p>
+              <p>new users: 20</p>
+            </div>
+          </div>
+          <div class="refresh">
+            <button>Refresh Statistics</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- You can also require other files to run in this process -->
+
     <script src="./renderer.js"></script>
   </body>
 </html>

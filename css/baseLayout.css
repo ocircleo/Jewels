@@ -1,0 +1,22 @@
+.baselayout {
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.baseleft {
+  width: 250px;
+  background-color: aliceblue;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+.baseright {
+  height: 100%;
+  background-color: white;
+  flex: 1;
+  overflow-y: scroll;
+}
+

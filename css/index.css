@@ -1,0 +1,51 @@
+
+
+#welcome{
+    text-align: center;
+    padding: 30px;
+    text-transform: capitalize;
+    background-color: lightskyblue;
+}
+#welcome img{
+    background-color: gray;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+}
+#stats{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 50px;
+
+}
+
+#stats div{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#stats div p{
+    background-color: aliceblue;
+    padding: 10px 30px;
+    border: 3px solid rgba(128, 128, 128, 0.2);
+    border-radius: 5px;
+}
+.refresh{
+    display: flex;
+    justify-content: center;
+}
+.refresh button{
+    background-color: indigo;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    border: transparent;
+    outline: transparent;
+    transition: .2s;
+    cursor: pointer;
+}
+.refresh button:active{
+    transform: scale(.9);
+}

@@ -1,5 +1,5 @@
 // main.js
-
+console.log("app started");
 // Modules to control application life and create native browser window
 const { app, BrowserWindow } = require('electron')
 const path = require('node:path')
